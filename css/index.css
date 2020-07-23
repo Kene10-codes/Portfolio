@@ -1,0 +1,105 @@
+#main-section {
+    height: 75vh;
+    margin-top: 100px;
+}
+
+.main-container {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+.main-body {
+   text-align: center;
+}
+
+.main-body h1 {
+    font-size: 50px;
+}
+
+.myName {
+    color: #4caf50;
+    animation-name: myName;   
+}
+
+.main-body h2 {
+    font-size: 25px;
+}
+
+.main-body button {
+    margin-top: 20px;
+}
+
+/* about section */
+
+.about-container {
+    margin: auto; 
+    width: 90%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about-body h2 {
+    color: #4caf50;  
+    text-align: center;
+}
+
+.about-body p {
+   font-size: 20px; 
+   line-height: 40px;
+}
+
+.about-body button {
+   align-content: center;
+   
+
+
+/* project section */
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;  
+}
+
+.portfolio-container h2{
+    text-align: center;
+    color: #4caf50;
+}
+
+
+.project h3 {
+    color: #4caf50;
+}
+
+.project {
+    flex: 25%;
+    padding: 10px;
+    max-width: 25%;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+    .project {
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+
+
+/* contact section
+
+  @media (max-width: 992px) and (min-width: 701px) {
+    .project {
+        flex-direction:  column;
+        flex: 50%;
+        max-width: 50%;
+    }
+}  
