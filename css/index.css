@@ -1,44 +1,71 @@
 #main-section {
-    height: 75vh;
-    margin-top: 100px;
+    height: 65vh;
+    margin-top: 130px;
+
 }
 
 .main-container {
     display: flex;
-    margin: auto;
-    width: 50%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
 }
 
 .main-body {
-   text-align: center;
+    text-align: center;
+    animation-delay: 0ms;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-name: cardbody;  
+}
+@keyframes cardbody{
+    0% {
+        margin-top: 100%;
+        width: 300%;
+    }
+    100% {
+        margin-top: 0%;
+        width: 300%;
+    }
 }
 
 .main-body h1 {
-    font-size: 50px;
+    font-size: 270%;
 }
 
-.myName {
+span.myName {
     color: #4caf50;
-    animation-name: myName;   
+   
 }
+
 
 .main-body h2 {
-    font-size: 25px;
+    font-size: 170%;
 }
 
 .main-body button {
     margin-top: 20px;
+      
+}
+
+.main-body button .arrow{
+    padding-left: 5px;
+    color: #4caf50;
+    
 }
 
 /* about section */
 
+#about-section {
+    margin-top: 80px;
+}
 .about-container {
     margin: auto; 
     width: 90%;
     margin-bottom: 60px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .about-body h2 {
@@ -52,8 +79,8 @@
 }
 
 .about-body button {
-   align-content: center;
-   
+   align-content: center; 
+}
 
 
 /* project section */
@@ -85,6 +112,11 @@
 
 
 @media (max-width: 600px) {
+    #main-section {
+        height: 100vh;
+        margin-top: 90px;
+    }
+
     .project {
         flex-direction: column;
         flex: 100%;
@@ -94,7 +126,7 @@
 
 
 
-/* contact section
+/*contact section*/
 
   @media (max-width: 992px) and (min-width: 701px) {
     .project {

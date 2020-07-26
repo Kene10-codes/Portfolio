@@ -38,17 +38,22 @@ body {
     color: white;
 }
 
-.topnav .icon {
+.topnav .icon{
     display: none;
+    color: #fff;
+    
 }
 
 
 button {
     background-color: #fff;
+    color: #4caf50 !important;
     border-radius: 8px;
-    padding:4px;
+    padding: 7px;
     border: none;
     outline: none;
+    width: 150px;
+    
 }
 
 button a {
