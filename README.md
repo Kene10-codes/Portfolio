@@ -1,4 +1,4 @@
 # Portfolio
 Building my portfolio
 
-This is my portfolio website. It's 
+portfolio website. It's  still under construction.
