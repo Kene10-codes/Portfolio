@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/script.js"></script>
 
+    <!--Animation CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--font awesome librabry-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 </head>
@@ -21,7 +24,7 @@
             <a href="project.html">Project</a>
             <a href="contact.html" class="last">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <i class="fas fa-bars"></i>
             </a>     
         </div>           
 
@@ -30,33 +33,40 @@
 <section id="main-section">
     <div class="main-container">
         <div class="main-body">
-         <h1>Hi, <span>&#128075;</span> I'm <span class="myName">Kenechukwu Nwobodo</span> </h1>
+         <h1>Hi, I'm <span class="myName">Kenechukwu Nwobodo</span> </h1>
          <h2>Frontend Developer</h2>
          <button><a href="project.html">View my work<span class="arrow">&rarr;</span></a></button> 
         </div>
     </div>
 </section>
 
-<!--About section-->
+<!--about section-->
 <section id="about-section">
         <div class="about-container">
-            <div class="about-body">
                 <h2><span>&lt;</span>About Me<span>&gt;</span></h2> 
+    
+            <div class="about-body">
                <!--My picture goes here-->
-                <img src="" alt="Kenechukwu Nwobodo (Frontend Developer)">
-
+               <div class="about-content div-photo">
+                <img src="photos/kene.jpg" alt="Kenechukwu Nwobodo (Frontend Developer)">
+              </div>
+              <div class="about-content">
                 <p>Hi there!, I am Kenechukwu Nwobodo. I am a frontend engineer based in Enugu, Nigeria. I have a Bachelor of Science (B.sc) degree in
                     (In-view) in Computer Science from the University of Nigeria Nsukka (UNN).
                     I enjoy building beautiful websites with good sense of design and user experience in check.
                 </p>
-                <button><a href="about.html">More About Me</a></button>
             </div>
+                
+            </div>
+        </div>
         </div>
 </section>
 
 <!--Portfolio Section-->
-<section id = "portfolio-section">
-    <div class="portfolio-container">
+<section id = "project-section"> 
+    <div class="project-container">
+        <h2><span>&lt;</span>Project<span>&gt;</span></h2> 
+        <div class="project-body">
        <div class="project">
                 <img src="" alt="">
                 <h3>Currency Converter Application</h3>
@@ -105,43 +115,41 @@
 
 <!--Contact section-->
 <section id="contact-section">
-    <div>
-        <h2>Get in touch</h2>
-        <form action="">
-            <div>
-              <label for="">Name:</label>
-            <br>
-            <input type="text" value="" id=""  placeholder="Enter your name">
-            </div>
-            <div>
-                <label for="">Email</label><br>
-                <input type="emial" value="" id="" placeholder="Enter your email">
-            </div>
-    
-            <div>
-            <label for="">Message</label>
-            <br>
-            <textarea name="" placeholder="Type your message here....." id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Send" name="" id="">
-            </div>          
-        </form>
+    <div class="contact-container">
+        <h2><span>&lt;</span>Get In Touch<span>&gt;</span></h2> 
+        <h2>Social Networks:</h2>
+        <!--Phone Number-->
+        <i class="fas fa-phone"></i>
+        <!--Twitter-->
+        <i class="fab fa-twitter"></i>
+        <!--Linkdln-->
+        <i class="fab fa-linkedin"></i>
+        <!--Github-->
+        <i class="fab fa-github"></i>
+        
+         
+    </div>
+        
     </div>
 
     <div>
-        <h2>Social Networks:</h2>
-        <!--Twitter-->
-        <span><a href=""><img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1592571581/Portfolio/twitter-round_y2boy3.png" alt=""></a></span>
-        <!--Linkdln-->
-        <span><a href=""><img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1592571752/Portfolio/linkedin-round_okd5ri.png" alt=""></a></span>
-        <!--Github-->
-        <span><a href=""><img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1592571164/github_psvvzd.png" alt=""></a></span>         
-    </div>
+        
 </section>
 
+<div class="footer">
+    <p>Kene &copy; 2020</p>
+</div>
 
 
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+        {
+            offset: 400,
+            duration: 1000
+
+    });
+  </script>
 </body>
 </html>

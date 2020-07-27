@@ -1,6 +1,6 @@
 #main-section {
-    height: 65vh;
-    margin-top: 130px;
+    height: 75vh;
+    margin-top: 120px;
 
 }
 
@@ -32,6 +32,7 @@
 
 .main-body h1 {
     font-size: 270%;
+    color: #ffffff;
 }
 
 span.myName {
@@ -39,59 +40,73 @@ span.myName {
    
 }
 
-
 .main-body h2 {
     font-size: 170%;
 }
 
-.main-body button {
-    margin-top: 20px;
-      
-}
 
-.main-body button .arrow{
-    padding-left: 5px;
-    color: #4caf50;
-    
-}
+
 
 /* about section */
 
 #about-section {
     margin-top: 80px;
 }
+
 .about-container {
     margin: auto; 
-    width: 90%;
     margin-bottom: 60px;
-    display: flex;
-    justify-content: center;  
 }
 
-.about-body h2 {
+.about-container  h2 {
     color: #4caf50;  
     text-align: center;
+    padding-bottom: 30px;
+}
+
+.about-body {
+    display: flex; 
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+.about-content{
+    flex: 50%;
+    max-width: 50%;
+    padding: 30px;
+    
 }
 
 .about-body p {
-   font-size: 20px; 
-   line-height: 40px;
+   font-size: 130%; 
+   line-height: 1.4;
+   color: #fff;
+   
 }
 
-.about-body button {
-   align-content: center; 
-}
 
 
 /* project section */
+.project-container {
+    margin-bottom: 20px;
+}
 
-.portfolio-container {
+.project-container h2 {
+    color: #4caf50;  
+    text-align: center;
+    padding-bottom: 30px;
+}
+.project-body {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;  
 }
 
-.portfolio-container h2{
+.project-body h2{
     text-align: center;
     color: #4caf50;
 }
@@ -110,11 +125,33 @@ span.myName {
     justify-content: center;
 }
 
+/*contact section css*/
 
+.contact-container h2 {
+    color: #4caf50;  
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer{
+    text-align: center;
+    color: #fff;
+}
 @media (max-width: 600px) {
     #main-section {
         height: 100vh;
         margin-top: 90px;
+    }
+
+    .about-body{
+        flex-direction: column;
+    }
+    
+
+    .about-content{
+        flex: 100%;
+        max-width: 100%;
+        
     }
 
     .project {
@@ -123,15 +160,28 @@ span.myName {
         max-width: 100%;
     }
 
+    
 
 
 
 /*contact section*/
 
   @media (max-width: 992px) and (min-width: 701px) {
+
+    .about-body{
+        flex-direction: column;
+    }
+    
+
+    .about-content{
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+
     .project {
         flex-direction:  column;
         flex: 50%;
         max-width: 50%;
     }
-}  
+  }
