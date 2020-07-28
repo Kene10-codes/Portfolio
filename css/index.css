@@ -1,130 +1,186 @@
-#main-section {
+#main_section {
     height: 75vh;
     margin-top: 120px;
 
 }
 
-.main-container {
+.main_container {
     display: flex;
     justify-content: center;
     align-content: center;
     overflow: hidden;
 }
 
-.main-body {
+.main_body {
     text-align: center;
-    animation-delay: 0ms;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-duration: 2s;
-    animation-name: cardbody;  
-}
-@keyframes cardbody{
-    0% {
-        margin-top: 100%;
-        width: 300%;
-    }
-    100% {
-        margin-top: 0%;
-        width: 300%;
-    }
-}
-
-.main-body h1 {
-    font-size: 270%;
-    color: #ffffff;
-}
-
-span.myName {
-    color: #4caf50;
+    padding: 0 20%;
    
 }
 
-.main-body h2 {
-    font-size: 170%;
+.main_heading1 {
+    color: #ffffff;
 }
 
+.main_body span {
+    color: #4caf50;
+    font-size: 200%;
+   
+}
+
+.main_heading2{
+    font-size: 170%;
+    color: #fff;
+    
+}
+
+.main_para {
+    color: #fff;
+    padding-top: 10px;
+    line-height: 1.8;
+    word-spacing: 0.1em;
+}
+
+.main_btn {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 40px;
+    border: 1.5px dashed #4caf50;
+    font-size: 16px;
+    display: inline-block;
+    
+}
+
+.main_btn:hover{
+    opacity: 0.5;
+    border-color: #fff;
+}
+
+.main_link{
+    color: #4caf50 !important;
+    text-decoration: none;   
+    cursor: pointer; 
+}
 
 
 
 /* about section */
 
-#about-section {
+#about_section {
     margin-top: 80px;
 }
 
-.about-container {
+.about_container {
     margin: auto; 
     margin-bottom: 60px;
 }
 
-.about-container  h2 {
+.about_heading2 {
     color: #4caf50;  
     text-align: center;
     padding-bottom: 30px;
+    font-size: 32px;
 }
 
-.about-body {
+.about_heading2--span{
+    font-size: 35px;
+    color: #fff;
+}
+
+.about_body {
     display: flex; 
 }
 
-img {
+.about_img {
     max-width: 100%;
-
 }
 
-
-.about-content{
+.about_content{
     flex: 50%;
     max-width: 50%;
-    padding: 30px;
-    
+    padding: 30px;  
 }
 
-.about-body p {
-   font-size: 130%; 
-   line-height: 1.4;
+.about_para1, .about_para2 {
+   line-height: 1.8;
    color: #fff;
-   
+   padding-top: 10px; 
+   word-spacing: 0.1em;
 }
-
 
 
 /* project section */
-.project-container {
+.project_container {
     margin-bottom: 20px;
 }
 
-.project-container h2 {
+.project_heading2 {
     color: #4caf50;  
     text-align: center;
     padding-bottom: 30px;
+    font-size: 32px;
 }
-.project-body {
+
+.project_heading2--span{
+    font-size: 35px;
+    color: #fff;
+}
+.project_body {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;  
 }
 
-.project-body h2{
+.project_heading2{
     text-align: center;
     color: #4caf50;
 }
 
-
-.project h3 {
-    color: #4caf50;
+.project_img{
+    max-width: 100%;
 }
 
-.project {
-    flex: 25%;
+.project_heading3{
+    color: #4caf50;
+    font-size: 130%;
+    margin-top: 10px;
+}
+.project_heading4{
+    color: #bbb;
+}
+.project_para{
+    color: #fff;
+}
+.project_div{
+    flex: 50%;
     padding: 10px;
-    max-width: 25%;
+    max-width: 50%;
     text-align: center;
     margin: 0;
     justify-content: center;
 }
+.project_btn {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 40px;
+    border: 1.5px dashed #4caf50;
+    font-size: 16px;
+    display: inline-block;
+    
+}
 
+.project_btn:hover{
+    opacity: 0.5;
+    border-color: #fff;
+}
+
+.project_link{
+    color: #4caf50;
+    text-decoration: none;  
+    cursor: pointer; 
+    
+}
 /*contact section css*/
 
 .contact-container h2 {
@@ -137,24 +193,39 @@ img {
     text-align: center;
     color: #fff;
 }
-@media (max-width: 600px) {
-    #main-section {
-        height: 100vh;
-        margin-top: 90px;
-    }
 
-    .about-body{
+@media screen and (max-width: 330px){
+    #about_section {
+        margin-top: 300px;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    #main_section {
+        height: 100vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .main_body {
+        text-align: left;
+        padding: 20px;
+       
+    }
+    .about_body{
         flex-direction: column;
     }
     
 
-    .about-content{
+    .about_content{
         flex: 100%;
         max-width: 100%;
         
     }
 
-    .project {
+    .project_div {
         flex-direction: column;
         flex: 100%;
         max-width: 100%;
@@ -168,18 +239,18 @@ img {
 
   @media (max-width: 992px) and (min-width: 701px) {
 
-    .about-body{
+    .about_body{
         flex-direction: column;
     }
     
 
-    .about-content{
+    .about_content{
         flex: 100%;
         max-width: 100%;
         
     }
 
-    .project {
+    .project_div {
         flex-direction:  column;
         flex: 50%;
         max-width: 50%;

@@ -5,12 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
-
 }
 
 body {
-    background: #000;
+    background: #111;
 }
 
 .topnav {
@@ -29,8 +27,8 @@ body {
 }
 
 .topnav a:hover {
-    background: #ddd;
-    color: black;
+    background: #222;
+    color: #4caf50;
 }
 
 .topnav a.active{
@@ -45,28 +43,7 @@ body {
 }
 
 
-button {
-    background-color: #fff;
-    color: #4caf50 !important;
-    border-radius: 8px;
-    padding: 7px;
-    border: none;
-    outline: none;
-    width: 150px;
-    
-}
 
-button a {
-    color: #000;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-
-h2 span{
-    font-size: 20px;
-    color: #fff;
-}
 
 
 @media screen and (max-width: 600px) {
