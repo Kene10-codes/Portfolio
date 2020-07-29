@@ -8,7 +8,6 @@
 }
 
 .main_body {
-    text-align: center;
     padding: 0 20%;
    
 }
@@ -19,13 +18,15 @@
 
 .main_body span {
     color: #4caf50;
-    font-size: 200%;
+    font-size: 250%;
+    display: block;
    
 }
 
 .main_heading2{
     font-size: 170%;
     color: #fff;
+    text-align: left;
     
 }
 
@@ -33,6 +34,7 @@
     color: #fff;
     padding-top: 10px;
     line-height: 1.8;
+    text-align: left;
     word-spacing: 0.1em;
 }
 
