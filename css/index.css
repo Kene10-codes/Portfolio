@@ -1,13 +1,9 @@
-#main_section {
-    height: 75vh;
-    margin-top: 120px;
-
-}
 
 .main_container {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -93,12 +89,20 @@
 
 .about_img {
     max-width: 100%;
+   
+}
+
+.div_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_content{
     flex: 50%;
     max-width: 50%;
     padding: 30px;  
+  
 }
 
 .about_para1, .about_para2 {
