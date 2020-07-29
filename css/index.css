@@ -2,6 +2,7 @@
 .main_container {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -14,26 +15,30 @@
 
 .main_heading1 {
     color: #ffffff;
+    font-size: 150%;
 }
 
 .main_body span {
     color: #4caf50;
-    font-size: 250%;
+    font-size: 270%;
     display: block;
    
 }
 
 .main_heading2{
-    font-size: 170%;
+    font-family: inherit;
+    font-size: 180%;
     color: #fff;
     text-align: left;
+    
     
 }
 
 .main_para {
     color: #fff;
+    font-family: inherit;
     padding-top: 10px;
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: left;
     word-spacing: 0.1em;
 }
@@ -44,6 +49,7 @@
     padding: 15px;
     margin-top: 40px;
     border: 1.5px dashed #4caf50;
+    font-family: inherit;
     font-size: 16px;
     display: inline-block;
     
@@ -74,14 +80,17 @@
 }
 
 .about_heading2 {
-    color: #4caf50;  
+    color: #4caf50; 
+    font-size: 32px;
+    font-family: inherit; 
     text-align: center;
     padding-bottom: 30px;
-    font-size: 32px;
+    
 }
 
 .about_heading2--span{
     font-size: 35px;
+    font-family: inherit;
     color: #fff;
 }
 
@@ -90,6 +99,7 @@
 }
 
 .about_img {
+    min-width: 300px;
     max-width: 100%;
    
 }
@@ -110,6 +120,7 @@
 .about_para1, .about_para2 {
    line-height: 1.8;
    color: #fff;
+   font-family: inherit;
    padding-top: 10px; 
    word-spacing: 0.1em;
 }
@@ -122,9 +133,11 @@
 
 .project_heading2 {
     color: #4caf50;  
-    text-align: center;
-    padding-bottom: 30px;
     font-size: 32px;
+    font-family: inherit;
+    text-align: center;
+    padding-bottom: 15px;
+    
 }
 
 .project_heading2--span{
@@ -134,7 +147,6 @@
 .project_body {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;  
 }
 
 .project_heading2{
@@ -143,35 +155,50 @@
 }
 
 .project_img{
+    min-width: 240px;
     max-width: 100%;
 }
 
 .project_heading3{
     color: #4caf50;
-    font-size: 130%;
+    font-size: 140%;
+    font-family: inherit;
     margin-top: 10px;
+
 }
+
 .project_heading4{
     color: #bbb;
+    margin-top: 5px; 
 }
+
 .project_para{
     color: #fff;
+    font-family: inherit;
+    line-height: 1.6; 
+    margin-top: 5px;
+    word-spacing: 0.1em;
+    text-align: center;
+ 
 }
 .project_div{
     flex: 50%;
     padding: 10px;
-    max-width: 50%;
-    text-align: center;
-    margin: 0;
     justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0;   
+    text-align: center;
 }
+
 .project_btn {
     background-color: #222;
+    font-size: 16px;
+    font-family: inherit;
     border-radius: 10px;
     padding: 15px;
     margin-top: 40px;
     border: 1.5px dashed #4caf50;
-    font-size: 16px;
     display: inline-block;
     
 }
@@ -184,23 +211,83 @@
 .project_link{
     color: #4caf50;
     text-decoration: none;  
+    cursor: pointer;    
+}
+
+
+/*contact section css*/
+
+.contact__heading2 {
+    color: #4caf50;  
+    font-size: 32px;
+    font-family: inherit;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.contact__heading2--span{
+    font-size: 35px;
+    color: #fff;
+}
+
+.contact__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__para{
+    line-height: 1.6;
+    color: #fff;
+    font-family: inherit;
+    padding-top: 10px; 
+    word-spacing: 0.1em;
+}
+
+.contact__para {
+    padding: 0 20%;
+    font-family: inherit;
+}
+.contact__btn{
+    background-color: #222;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    border: 1.5px dashed #4caf50;
+    display: inline-block;
+
+}
+
+.contact__link{
+    color: #4caf50;
+    text-decoration: none;  
     cursor: pointer; 
     
 }
-/*contact section css*/
+.contact__socialnetworks{
+    color: #ffffff;
 
-.contact-container h2 {
-    color: #4caf50;  
-    text-align: center;
-    padding-bottom: 30px;
 }
 
+.contact__socialnetworks {
+    visibility: visible;
+}
 .footer{
     text-align: center;
     color: #fff;
 }
 
 @media screen and (max-width: 330px){
+    .main_heading1 {
+        color: #ffffff;
+        font-size: 100%;
+        margin-bottom: 5px;
+    }
+    
     #about_section {
         margin-top: 300px;
         
@@ -258,7 +345,7 @@
 
     .project_div {
         flex-direction:  column;
-        flex: 50%;
-        max-width: 50%;
+        flex: 100%;
+        max-width: 100%;
     }
   }
