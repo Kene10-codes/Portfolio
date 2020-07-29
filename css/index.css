@@ -20,7 +20,8 @@
 
 .main_body span {
     color: #4caf50;
-    display: inline-block;
+    font-size: 5rem;
+    display: block;
 }
 
 .main_heading2{
@@ -285,6 +286,11 @@
         padding: 0 0;
        
     }
+    .main_body span {
+        color: #4caf50;
+        font-size: 2rem;
+        display: block;
+    }
     .main_heading1 {
         color: #ffffff;
         font-size: 100%;
@@ -310,6 +316,11 @@
         text-align: left;
         padding: 0;
        
+    }
+    .main_body span {
+        color: #4caf50;
+        font-size: 2rem;
+        display: block;
     }
     .about_body{
         flex-direction: column;
@@ -338,13 +349,21 @@
     .main_body {
         text-align: left;
         padding: 0;
+        max-width: 0;
        
     }
+    
+
+
     .about_body{
         flex-direction: column;
     }
     
-
+    .main_body span {
+        color: #4caf50;
+        font-size: 2rem;
+        display: block;
+    }
     .about_content{
         flex: 100%;
         max-width: 100%;
