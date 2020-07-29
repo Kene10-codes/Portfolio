@@ -15,19 +15,17 @@
 
 .main_heading1 {
     color: #ffffff;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
 .main_body span {
     color: #4caf50;
-    font-size: 270%;
-    display: block;
-   
+    display: inline-block;
 }
 
 .main_heading2{
     font-family: inherit;
-    font-size: 180%;
+    font-size: ;
     color: #fff;
     text-align: left;
     
@@ -282,6 +280,11 @@
 }
 
 @media screen and (max-width: 330px){
+
+    .main_body {
+        padding: 0 0;
+       
+    }
     .main_heading1 {
         color: #ffffff;
         font-size: 100%;
@@ -295,6 +298,7 @@
 }
 
 @media (max-width: 600px) {
+
     #main_section {
         height: 100vh;
         margin-top: 20px;
@@ -304,7 +308,7 @@
     
     .main_body {
         text-align: left;
-        padding: 20px;
+        padding: 0;
        
     }
     .about_body{
@@ -331,7 +335,11 @@
 /*contact section*/
 
   @media (max-width: 992px) and (min-width: 701px) {
-
+    .main_body {
+        text-align: left;
+        padding: 0;
+       
+    }
     .about_body{
         flex-direction: column;
     }
