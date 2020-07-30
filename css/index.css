@@ -310,13 +310,14 @@
         
     }
     .main_body {
-        padding: 0 0;
+        padding: 0 10px;
        
     }
     .main_body span {
         color: #4caf50;
         font-size: 3rem;
-        display: block;
+        display: inline-block;
+        margin-bottom: 5px;
     }
     .main_heading1 {
         color: #ffffff;
@@ -340,14 +341,13 @@
 
     #main_section {
         height: 100vh;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        
+        margin-top: 5px;
+        margin-bottom: 10px;      
     }
     
     .main_body {
         text-align: left;
-        padding: 0;
+        padding: 0 10px;
        
     }
     .main_body span {
@@ -386,7 +386,7 @@
   @media (max-width: 992px) and (min-width: 701px) {
     .main_body {
         text-align: left;
-        padding: 0;
+        padding: 0 10px;
         max-width: 0;
        
     }
