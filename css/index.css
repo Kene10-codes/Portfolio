@@ -316,8 +316,7 @@
     .main_body span {
         color: #4caf50;
         font-size: 3rem;
-        display: inline-block;
-        margin-bottom: 5px;
+        display: block;
     }
     .main_heading1 {
         color: #ffffff;
