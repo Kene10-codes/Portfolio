@@ -382,13 +382,13 @@
 
 /*contact section*/
 
-  @media (max-width: 992px) and (min-width: 701px) {
+  @media (max-width: 992px) and (min-width: 601px) {
     .main_body {
         text-align: left;
         padding: 0 10px;
-        max-width: 0;
        
     }
+    
     
     .about_body{
         flex-direction: column;
