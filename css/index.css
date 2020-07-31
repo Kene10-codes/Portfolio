@@ -265,6 +265,12 @@
     cursor: pointer; 
     
 }
+
+.contact__mailto--link {
+    text-decoration: none;
+    color: #4caf50;
+    cursor: pointer;
+}
 .contact__heading2--social{
     color: #4caf50;
     margin-top: 90px;
