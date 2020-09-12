@@ -9,8 +9,7 @@
 }
 
 .main_body {
-    padding: 0 20%;
-   
+    padding: 0 20%; 
 }
 
 .main_heading1 {
@@ -75,7 +74,8 @@
 
 .about_container {
     margin: auto; 
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+   
 }
 
 .about_heading2 {
@@ -83,7 +83,7 @@
     font-size: 32px;
     font-family: inherit; 
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
     
 }
 
@@ -98,7 +98,7 @@
 }
 
 .about_img {
-    min-width: 300px;
+    width: 700px;
     max-width: 100%;
    
 }
@@ -127,7 +127,7 @@
 
 /* project section */
 .project_container {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .project_heading2 {
@@ -145,12 +145,8 @@
 }
 .project_body {
     display: flex;
+    padding: 0 10px;
     flex-wrap: wrap;
-}
-
-.project_heading2{
-    text-align: center;
-    color: #4caf50;
 }
 
 .project_img{
@@ -160,34 +156,28 @@
 
 .project_heading3{
     color: #4caf50;
-    font-size: 140%;
+    font-size: 170%;
     font-family: inherit;
     margin-top: 10px;
+    padding-top: 20px;
 
 }
 
-.project_heading4{
-    color: #bbb;
-    margin-top: 5px; 
-}
-
-.project_para{
-    color: #fff;
-    font-family: inherit;
-    line-height: 1.6; 
-    letter-spacing: 0.05rem;
-    margin-top: 5px;
-    text-align: center;
- 
-}
 .project_div{
     flex: 50%;
     padding: 10px;
     justify-content: center;
     align-items: center;
     max-width: 50%;
-    margin: 0;   
+    margin: 0 0 80px 0;   
     text-align: center;
+}
+
+.project_div img {
+    width: 600px;
+    max-width: 100%;
+    height: 550px;
+    max-width: 100%;
 }
 
 .project_btn {
@@ -197,6 +187,7 @@
     border-radius: 10px;
     padding: 15px;
     margin-top: 40px;
+    width: 160px;
     border: 1.5px dashed #4caf50;
     display: inline-block;
     
