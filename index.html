@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
+    <meta name='keyword' content='Kenechukwu Nwobodo, Kene developer, Kenechukwu frontend developer'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kene Nwobodo | Frontend Developer</title>
     <!--css links-->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/script.js"></script>
-
+   
     <!--Animation CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!--font awesome librabry-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 </head>
 <body>
+
+    <!--Button Scroll-->
+    <button class="btnScrollToTop">
+        <i class="fas fa-arrow-up" ></i>
+    </button>
+
     <!--Mobile Navigation-->
     <section id="mobile-nav">
         <div class="topnav" id="myTopnav">
@@ -38,7 +43,7 @@
          <p class="main_para">Based in Enugu State, Nigeria. I enjoy building aesthetically pleasing, creative, functional 
              and well detail-oriented web products that make people's life better.
          </p>
-         <button class="main_btn"><a  href="project_section" class="main_link">View My Work</a></button> 
+         <button class="main_btn"><a  href="project_section" class="main_link">Explore</a></button> 
         </div>
     </div>
 </section>
@@ -47,27 +52,23 @@
 <section id="about_section">
         <div class="about_container">
                 <h2 class="about_heading2" data-aos="flip-up"><span class="about_heading2--span">&lt;</span>About Me<span class="about_heading2--span">&gt;</span></h2> 
-    
             <div class="about_body">
                <!--My picture goes here-->
                <div class="about_content div_photo" data-aos="fade-right">
-                <img class="about_img" src="photos/Kene.jpg" alt="Kenechukwu Nwobodo (Frontend Developer)">
+                <img class="about_img" src="photos/kc.jpg" alt="Kenechukwu Nwobodo (Frontend Developer)">
               </div>
               <div class="about_content" data-aos="fade-left">
                <p class="about_para1">
-                    Hi there! My name is Kenechukwu Nwobodo. I am a frontend developer and lives in Enugu, Nigeria. 
+                    Hi there! My name is <span>Kenechukwu Nwobodo.</span>  I am a frontend developer and lives in Enugu, Nigeria. 
                     I have always been in awe of the Web and how it really works. I enjoy crafting amazing digital and technology
                     experiences. I have passion for creating user friendly, creative, aesthetically pleasing websites.
                </p>
                
-               <p class="about_para2">I am a computer science student, currently in my third year in the University of Nigeria Nsukka. I am currently  a member of Developer Student Cycle, UNN 
+               <p class="about_para2">I am a <span>computer science student,</span>  currently in my third year in the University of Nigeria Nsukka. I am currently  a member of Developer Student Cycle, UNN 
                     branch , where we share ideas and collaborate on building meaningful and feasible projects on a daily basis. 
-                    Here are some of the technologies I have been working with lately, and am working towards expanding my knowledge and learning more from others.
                     
-                </p>
-                
-            </div>
-                
+                </p>        
+            </div>        
             </div>
         </div>
         </div>
@@ -83,27 +84,30 @@
                 <h3 class="project_heading3">Web Portfolio</h3>
                 <button class="project_btn"><a href="https://jenniferdoe.netlify.app/" class="project_link">View Project</a></button>
         </div>
-       <div class="project_div" data-aos="fade-right">
+        <div class="project_div" data-aos="fade-right">
+                <img class="project_img"  src="photos/fish.PNG" alt="Fishtech">
+                <h3 class="project_heading3">Freelance App </h3>
+                <button class="project_btn"><a href="https://fishtechapp.netlify.app/" class="project_link">View Project</a></button>
+        </div>
+       <div class="project_div" data-aos="fade-left">
                 <img class="project_img"  src="photos/currencyConverter.png" alt="currency converter image">
                 <h3 class="project_heading3">Currency Converter </h3>
                 <button class="project_btn"><a href="https://kenenwobodo.github.io/currencyconverter.github.io/" class="project_link">View Project</a></button>
         </div>
-            
+
         <div class="project_div" data-aos="fade-left">
             <img src="./photos/agedPrompt.PNG" alt="agedPrompt image"  class="project_img">
-            <h3 class="project_heading3">AgedPrompt Landing Page</h3>
+            <h3 class="project_heading3">AgedPrompt </h3>
             <button class="project_btn"><a href="https://agedprompt.herokuapp.com/" class="project_link">View Project</a></button>
         </div>
 
         <div class="project_div" data-aos="fade-right">
-            <img src="photos/JS-clock.PNG" alt=""  class="project_img">
-            <h3 class="project_heading3">Wall Clock </h3>
-            <button class="project_btn"><a href="https://javascript-clocks.netlify.app/" class="project_link">View Project</a></button>
-        </div>
-
-       </div> 
+            <img class="project_img"  src="photos/movie.PNG" alt="currency converter image">
+            <h3 class="project_heading3">Movie Search </h3>
+            <button class="project_btn"><a href="https://movies-checker-app.netlify.app/" class="project_link">View Project</a></button>
     </div>
-
+        
+    </div>
 </section>
 
 <!--Contact section-->
@@ -121,34 +125,30 @@
             <!--Phone Number-->
             <span><i  class="fas fa-phone contact__social--phone"></i>+2348168789414</span>
             <br>
-            <!--Twitter-->
+            <!--Twitter link-->
             <a href="https://twitter.com/RealKeneNwobodo"><i class="fab fa-twitter"></i></a>
-            <!--Linkdln-->
+            <!--Linkdln link-->
             <a href="https://www.linkedin.com/in/kenechukwu-nwobodo-8a30171a2/"><i class="fab fa-linkedin"></i></a>
-            <!--Github-->
-            <a href="https://github.com/keneNwobodo"><i class="fab fa-github"></i></a>
-            
-         
+            <!--Github link-->
+            <a href="https://github.com/keneNwobodo"><i class="fab fa-github"></i></a>  
        </div>    
      </div>
-<div>
-        
+<div>     
 </section>
 
 <div class="footer">
-    <p>Built by Kenechukwu Nwobodo &copy;2020 All rights reserved.
-    </p>
+    <p>Built by Kenechukwu Nwobodo &copy;2020 All rights reserved.</p>
 </div>
 
 
 
+<script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init(
         {
             offset: 400,
             duration: 1100
-
     });
   </script>
 </body>
